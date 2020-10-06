@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionBar"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Person TAG "
+                android:textSize="20sp"
+                android:textColor="#ed2b2727"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+        <include layout="@layout/horizontal_line" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@+id/actionBar"
+        android:id="@+id/path_"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAG :"
+            android:textColor="#ed2b2727"
+            android:textSize="16sp"
+            android:paddingTop="15dp"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Person tag"
+            android:layout_marginStart="7dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/tag_text"
+            android:padding="5dp"
+            android:inputType="text"
+            android:layout_weight="4"
+            android:maxLines="1"
+            android:textColor="#575757"
+            android:textColorLink="#636161"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/path_"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/ok_btn"
+        android:layout_marginBottom="10dp"
+        android:background="#ed2b2727"
+        />
+</RelativeLayout>
